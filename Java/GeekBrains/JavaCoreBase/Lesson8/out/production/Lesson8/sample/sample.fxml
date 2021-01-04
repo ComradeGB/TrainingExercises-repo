@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="41.0" layoutY="350.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <Button layoutX="215.0" layoutY="350.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Button layoutX="123.0" layoutY="281.0" mnemonicParsing="false" onAction="#startAction" prefHeight="34.0" prefWidth="55.0" text="Start">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="inputNumber" layoutX="84.0" layoutY="207.0" onAction="#startAction" prefHeight="49.0" prefWidth="134.0" />
+      <Label layoutX="59.0" layoutY="14.0" text="Игра угадай число" textAlignment="CENTER" textFill="#0400eb">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="72.0" layoutY="68.0" prefHeight="34.0" prefWidth="156.0" text="Угадайте целое число от 0 до 10, с 3 попыток" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label fx:id="text" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="130.0" prefHeight="64.0" prefWidth="167.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
